@@ -1,0 +1,44 @@
+@import url("style.css");
+
+.cart-portrait {
+  display: flex;
+  flex-direction: column;
+  padding: var(--text-md);
+  background-color: var(--color-white);
+  border-radius: 1rem;
+  width: min-content;
+  height: 100;
+}
+
+.cart-image {
+  width: var(--text-9xl);
+  object-fit: cover;
+  height: auto;
+  display: flex;
+  background-color: var(--color-white-gray);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+.footer img {
+  width: auto;
+  object-fit: cover;
+  height: var(--text-base);
+  transform: rotate(180deg);
+}
+
+.cart-portrait h6 {
+  font-size: var(--text-md);
+  margin-top: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+.cart-portrait .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  height: 2rem;
+}
+.cart-portrait p {
+  color: var(--color-secondary);
+}

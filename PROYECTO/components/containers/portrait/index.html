@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!-- <base href="../../../assets/" /> -->
+  </head>
+  <body>
+    <div class="container-portrait">
+      <div class="container-background">
+        <img src="../../../assets/fondo.jpg" alt="" />
+      </div>
+      <div class="container-person">
+        <img src="../../../assets/person.png" alt="" />
+      </div>
+      <div class="container-text"><h6>Mas que Audio</h6></div>
+      <div class="content">
+        <div class="explorer-container">
+          <small>
+            Revoluciona tu experiencia auditiva con sonido de alta definición y
+            tecnología inteligente que se adapta a ti.
+          </small>
+          <button color="white">Explorar productos</button>
+        </div>
+        <div class="container-card">
+          <div id="card-portrait"></div>
+        </div>
+      </div>
+      <!-- <button>button portrait</button> <img src="assets/fondo.jpg" alt="" /> -->
+    </div>
+  </body>
+  <style>
+    .container-text {
+      color: white;
+      margin-top: 17rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container-text h6 {
+      font-size: var(--text-9xl);
+      overflow: hidden;
+      color: white;
+      /* text-align: center; */
+      word-spacing: 0.5rem;
+    }
+
+    .explorer-container {
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      gap: 2rem;
+    }
+
+    .explorer-container small {
+      max-width: 18rem;
+      color: var(--color-primary);
+      font-weight: 100;
+    }
+
+    .content {
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+      padding: 2.5rem 1.5rem;
+      align-items: end;
+      width: 100%;
+    }
+    .container-portrait {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      border-radius: 2rem;
+      align-items: center;
+      flex-direction: column;
+      flex: 1;
+      width: 100%;
+    }
+    .container-card {
+      position: relative;
+    }
+    .container-background img {
+      width: auto;
+      height: 100%;
+      object-fit: cover;
+    }
+    .container-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .container-person img {
+      width: auto;
+      height: 60rem;
+      object-fit: cover;
+    }
+    @media (max-width: 768px) {
+      .container-person {
+      left: 6rem
+    }
+    }
+    .container-person {
+      position: absolute;
+      z-index: 2;
+    }
+  </style>
+</html>
