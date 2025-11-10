@@ -1,11 +1,6 @@
-/* =========================
-   button.css
-   ========================= */
 
-/* Importar el archivo global */
 @import url("style.css");
 
-/* Estilos del botón */
 button {
   background-color: var(--color-black);
   color: var(--color-primary);
@@ -17,8 +12,7 @@ button {
   border-radius: 5rem;
   width: min-content;
   white-space: nowrap;
-  /* font-family: var(--font-family); */
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif v;
 }
 
 button:hover {

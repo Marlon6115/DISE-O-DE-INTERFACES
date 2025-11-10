@@ -1,45 +1,20 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-
-}
-
-
-* {
-  /* scrollbar-width: none;  */
-  /* -ms-overflow-style: none; */
-}
-
-
-*::-webkit-scrollbar {
-  /* display: none; */
-}
-
-
 :root {
-
   --color-primary: #fefdff;
   --color-secondary: #111113;
   --color-secondary-gray: #4f4f4f;
   --color-secondary-gray2: #cecece;
   --color-secondary-orange: #e04622;
   --color-secondary-orange2: #ffe8dd;
+  --color-secondary-orange3: #ff844b;
   --color-secondary-gray3: #cfcfcf;
-  --color-secondary-gray4: #2E2E2E;
+  --color-secondary-gray4: #2e2e2e;
   --color-white: #fff;
   --color-black: #111116;
   --color-white-gray: #f5f5f5;
 
-
   --font-family: "Poppins-Regular";
-  --border-radius: 8px;
-  --transition: all 0.3s ease;
   --background: #fefdff;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
 
   --breakpoint-sm: 600px;
   --breakpoint-md: 700px;
@@ -61,17 +36,38 @@
   --text-8xl: 5.5rem; /* 88px */
   --text-9xl: 11rem; /* 190px */
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
 
-body {
-  font-family: var(--font-family);
-  color: var(--color-secondary);
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 
-  width: 100dvw;
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary-orange);
+  border-radius: 70rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #666;
+}
+
+html, body {
+  width: 100vw;
   height: 100%;
   overflow-x: hidden;
   position: relative;
-  margin-bottom: 80rem;
+  font-family: var(--font-family);
+  color: var(--color-secondary);
 }
 
 h1,
@@ -81,7 +77,6 @@ p {
   font-weight: 500;
   color: var(--color-secondary);
 }
-
 
 h1 {
   font-size: var(--text-5xl);
@@ -104,14 +99,11 @@ h4 {
   font-family: "Poppins-SemiBold";
 }
 sub {
-
 }
 h2 {
   font-size: var(--text-xl);
   font-family: "Poppins-Medium";
 }
-
-
 
 p {
   font-size: var(--text-base);
@@ -121,10 +113,10 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5rem;
+    margin-top: 4rem;
 }
 .general-container {
   padding: 0.5rem;
-  width: calc(100% - 1rem);
 }
 .orange {
   color: var(--color-secondary-orange);
@@ -134,32 +126,32 @@ p {
 }
 @font-face {
   font-family: "Poppins-Regular";
-  src: url("/assets/font/Poppins/Poppins-Regular.ttf");
+  src: url("assets/font/Poppins/Poppins-Regular.ttf");
 }
 @font-face {
   font-family: "Poppins-Light";
-  src: url("/assets/font/Poppins/Poppins-Light.ttf");
+  src: url("assets/font/Poppins/Poppins-Light.ttf");
 }
 @font-face {
   font-family: "Poppins-ExtraLight";
-  src: url("/assets/font/Poppins/Poppins-ExtraLight.ttf");
+  src: url("assets/font/Poppins/Poppins-ExtraLight.ttf");
 }
 @font-face {
   font-family: "Poppins-Medium";
-  src: url("/assets/font/Poppins/Poppins-Medium.ttf");
+  src: url("assets/font/Poppins/Poppins-Medium.ttf");
 }
 @font-face {
   font-family: "Poppins-SemiBold";
-  src: url("/assets/font/Poppins/Poppins-SemiBold.ttf");
+  src: url("assets/font/Poppins/Poppins-SemiBold.ttf");
 }
 @font-face {
   font-family: "Poppins-Bold";
-  src: url("/assets/font/Poppins/Poppins-Bold.ttf");
+  src: url("assets/font/Poppins/Poppins-Bold.ttf");
 }
 
 @font-face {
   font-family: "Poppins-Black";
-  src: url("/assets/font/Poppins/Poppins-Black.ttf");
+  src: url("assets/font/Poppins/Poppins-Black.ttf");
 }
 .display-1 {
   font-family: "Poppins-SemiBold";
@@ -194,8 +186,8 @@ p {
 
   .container-text h6 {
     line-height: 1.4;
-    margin-bottom: 3rem; 
-    letter-spacing: 0.15rem; 
+    margin-bottom: 3rem;
+    letter-spacing: 0.15rem;
     white-space: inherit;
   }
   .container-person img {
@@ -208,18 +200,16 @@ p {
     font-size: var(--text-2xl);
   }
   h2 {
-  font-size: var(--text-xl);
-}
+    font-size: var(--text-xl);
+  }
   h3 {
     font-size: var(--text-lg);
   }
   h4 {
-  font-size: var(--text-2xl);
-}
+    font-size: var(--text-2xl);
+  }
   .display-1 {
     font-size: 8rem;
-  }
-  .display-2 {
   }
   li {
     font-size: var(--text-sm);
@@ -231,14 +221,14 @@ p {
     font-size: var(--text-2xl);
   }
   h2 {
-  font-size: var(--text-xl);
-}
+    font-size: var(--text-xl);
+  }
   h3 {
     font-size: var(--text-lg);
   }
   h4 {
-  font-size: var(--text-2xl);
-}
+    font-size: var(--text-2xl);
+  }
   p {
     font-size: 0.95rem;
   }
@@ -259,14 +249,14 @@ p {
     font-size: var(--text-xl);
   }
   h2 {
-  font-size: var(--text-lg);
-}
+    font-size: var(--text-lg);
+  }
   h3 {
     font-size: var(--text-md);
   }
   h4 {
-  font-size: var(--text-xl);
-}
+    font-size: var(--text-xl);
+  }
   p {
     font-size: 0.9rem;
   }
@@ -290,14 +280,14 @@ p {
     font-size: var(--text-xl);
   }
   h2 {
-  font-size: var(--text-lg);
-}
+    font-size: var(--text-lg);
+  }
   h3 {
     font-size: var(--text-md);
   }
   h4 {
-  font-size: var(--text-xl);
-}
+    font-size: var(--text-xl);
+  }
   p {
     font-size: 0.875rem;
   }

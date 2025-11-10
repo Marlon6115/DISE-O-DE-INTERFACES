@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="button.css" />
     <link rel="stylesheet" href="modules.css" />
     <link rel="stylesheet" href="container-styles.css" />
-    <base href="./assets/" />
   </head>
   <body>
     <div class="nav">
@@ -16,15 +15,15 @@
         <label> NOS </label>
       </div>
       <ul class="container-nav">
-        <li>Productos</li>
-        <li>Tecnologia</li>
-        <li>asdsfe</li>
-        <li>asdsfe</li>
+        <li><a href="#products">Productos</a></li>
+        <li><a href="#tech">Tecnologia</a></li>
+        <li><a href="#support">Soporte</a></li>
+        <li><a href="#contact">Contacto</a></li>
       </ul>
       <div class="container-search">
         <input type="search" class="search-component" placeholder="Search" />
         <div class="icon">
-          <img src="buscar.svg" alt="" />
+          <img src="./assets/buscar.svg" alt="" />
         </div>
       </div>
     </div>
@@ -32,13 +31,13 @@
       <div class="general-container">
         <div class="container-portrait">
           <div class="container-background">
-            <img src="fondo.jpg" alt="" />
+            <img src="./assets/fondo.jpg" alt="" />
           </div>
           <div class="container-person">
-            <img src="person.png" alt="" />
+            <img src="./assets/person.png" alt="" />
           </div>
           <div class="container-text display-1"><h6>Mas que Audio</h6></div>
-          <div class="content">
+          <div class="content-portrait">
             <div class="explorer-container">
               <small>
                 Revoluciona tu experiencia auditiva con sonido de alta
@@ -50,13 +49,13 @@
               <div class="cart-portrait">
                 <img
                   class="cart-image"
-                  src="nos-x1-pro.png"
+                  src="./assets/nos-x1-pro.png"
                   alt="Product Image"
                 />
-                <h6>NOS X1 Pro</h6>
+                <h3>NOS X1 Pro</h3>
                 <div class="footer">
                   <p>Ver mas</p>
-                  <img src="flecha.svg" />
+                  <img src="./assets/flecha.svg" />
                 </div>
               </div>
             </div>
@@ -64,7 +63,7 @@
         </div>
       </div>
       <div class="container-paragraph">
-        <img src="headphones.png" alt="" />
+        <img src="./assets/headphones.png" alt="" />
         <div class="display-2">
           <span class="orange">NOS</span>
           no solo crea audífonos, crea momentos.<span class="gray">
@@ -73,6 +72,7 @@
         </div>
       </div>
       <div class="container-products">
+        <section id="products"></section>
         <h1>Diseñados para sentir cada nota con claridad y emoción.</h1>
         <div class="slider">
           <div class="card-product">
@@ -82,13 +82,93 @@
             <div class="cover">
               <img
                 class="cart-image"
-                src="nos-x1-pro.png"
+                src="./assets/NOS-Spek.png"
                 alt="Product Image"
               />
             </div>
             <div class="description">
-              <strong> NOS X1 Pro </strong>
-              <small> Premium Speaker </small>
+              <strong>NOS Spek</strong>
+              <small>Premium Speaker</small>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="new-item">
+              <small>Nuevo</small>
+            </div>
+            <div class="cover">
+              <img
+                class="cart-image"
+                src="./assets/NOS-Os.png"
+                alt="Product Image"
+              />
+            </div>
+            <div class="description">
+              <strong>NOS Os</strong>
+              <small>Premium Speaker</small>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="new-item">
+              <small>Nuevo</small>
+            </div>
+            <div class="cover">
+              <img
+                class="cart-image"
+                src="./assets/Z9-Pro-productos.png"
+                alt="Product Image"
+              />
+            </div>
+            <div class="description">
+              <strong>Z9 Pro</strong>
+              <small>Headphones Premium</small>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="new-item">
+              <small>Nuevo</small>
+            </div>
+            <div class="cover">
+              <img
+                class="cart-image"
+                src="./assets/NOS-Son 3.png"
+                alt="Product Image"
+              />
+            </div>
+            <div class="description">
+              <strong>NOS Son 3</strong>
+              <small>Premium Earphones</small>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="new-item">
+              <small>Nuevo</small>
+            </div>
+            <div class="cover">
+              <img
+                class="cart-image"
+                src="./assets/X1-Pro-productos.png"
+                alt="Product Image"
+              />
+            </div>
+            <div class="description">
+              <strong>X1 Pro</strong>
+              <small>Premium Headphones</small>
+            </div>
+          </div>
+          <div class="card-product">
+            <div class="new-item">
+              <small>Nuevo</small>
+            </div>
+            <div class="cover">
+              <img
+                class="cart-image"
+                src="./assets/Z11-Pro.png"
+                alt="Product Image"
+              />
+            </div>
+            <div class="description">
+              <strong>Z11 Pro</strong>
+              <small>Headphones Premium</small>
             </div>
           </div>
         </div>
@@ -96,35 +176,36 @@
       <div class="column-elements">
         <div class="display-3 text" data-word="Sonido">
           <div class="float-image float-image-activation">
-            <img src="sonido.jpg" alt="" />
+            <img src="./assets/sonido.jpg" alt="" />
           </div>
           Sonido
         </div>
         <div class="display-3 text" data-word="Premium">
           <div class="float-image float-image-activation">
-            <img src="premium.jpg" alt="" />
+            <img src="./assets/premium.jpg" alt="" />
           </div>
           Premium
         </div>
         <div class="display-3 text" data-word="Tecnología">
           <div class="float-image float-image-activation">
-            <img src="tecnologia.jpg" alt="" />
+            <img src="./assets/tecnologia.jpg" alt="" />
           </div>
           Tecnología
         </div>
         <div class="display-3 text" data-word="Calidad">
           <div class="float-image float-image-activation">
-            <img src="calidad.jpg" alt="" />
+            <img src="./assets/calidad.jpg" alt="" />
           </div>
           Calidad
         </div>
         <div class="display-3 text" data-word="Estilo">
           <div class="float-image float-image-activation">
-            <img src="estilo.png" alt="" />
+            <img src="./assets/estilo.png" alt="" />
           </div>
           Estilo
         </div>
       </div>
+      <section id="tech"></section>
       <div class="general-container">
         <div class="container-tech">
           <h1>
@@ -134,7 +215,11 @@
           <div class="slide">
             <div class="description">
               <div class="title">
-                <img src="calidad-de-sonido.svg" class="icons" alt="" />
+                <img
+                  src="./assets/calidad-de-sonido.svg"
+                  class="icons"
+                  alt=""
+                />
                 <h3>Calidad de sonido</h3>
               </div>
               <div class="resume">
@@ -144,19 +229,20 @@
                 </small>
               </div>
               <div class="title">
-                <img src="flecha.svg" class="icons" alt="" />
-                <img src="flecha.svg" class="icons" alt="" />
+                <img src="./assets/flecha.svg" class="icons" alt="" />
+                <img src="./assets/flecha.svg" class="icons" alt="" />
               </div>
               <div class="prew">
-                <img src="X1-Pro-tecnologia.jpg" alt="" />
+                <img src="./assets/X1-Pro-tecnologia.jpg" alt="" />
               </div>
             </div>
             <div class="current">
-              <img src="Z11-Pro-tecnologia.jpg" alt="" />
+              <img src="./assets/Z11-Pro-tecnologia.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
+      <section id="support"></section>
       <div class="general-container">
         <div class="container-support">
           <div class="display-2">
@@ -165,17 +251,27 @@
           <div class="support-items">
             <div class="list-item">
               <h4>Auriculares</h4>
-              <h3>asdqwe</h3>
+              <h3>CJ 7 Pro</h3>
+              <h3>CJ 7</h3>
+              <h3>Z11 Pro</h3>
+              <h3>Z9 Pro</h3>
+              <h3>X1 PRO</h3>
             </div>
             <div class="list-item">
-              <h4>Auriculares</h4>
-              <h3>asdqwe</h3>
+              <h4>Audífonos</h4>
+              <h3>NOS Z7 Fit</h3>
+              <h3>NOS U +</h3>
+              <h3>bd Buds 5 Pro</h3>
+              <h3>bd Buds 5</h3>
+              <h3>Pd Buds Pro</h3>
+              <h3>Pd Buds</h3>
             </div>
             <div class="list-item">
-              <h4>Auriculares</h4>
-              <h3>asdqwe</h3>
-              <h3>asdqwe</h3>
-              <h3>asdqwe</h3>
+              <h4>Altavoces</h4>
+              <h3>NOS Spek Pro</h3>
+              <h3>NOS Spek</h3>
+              <h3>NOS Os Ultra</h3>
+              <h3>NOS Os </h3>
             </div>
           </div>
         </div>
@@ -185,44 +281,62 @@
         <div class="question-item">
           <h3>¿Cuánto dura la batería de mis audífonos o parlantes?</h3>
 
-          <img src="flecha-preguntas.svg" alt="" class="icons" />
+          <img src="./assets/flecha-preguntas.svg" alt="" class="icons" />
+        </div>
+        <div class="question-item">
+          <h3>¿Cómo funciona la tecnología de cancelación de ruido?</h3>
+
+          <img src="./assets/flecha-preguntas.svg" alt="" class="icons" />
+        </div>
+        <div class="question-item">
+          <h3>¿Los productos son resistentes al agua y al sudor?</h3>
+
+          <img src="./assets/flecha-preguntas.svg" alt="" class="icons" />
+        </div>
+        <div class="question-item">
+          <h3>¿Realizan envíos internacionales?</h3>
+
+          <img src="./assets/flecha-preguntas.svg" alt="" class="icons" />
+        </div>
+        <div class="question-item">
+          <h3>¿Puedo rastrear mi pedido?</h3>
+
+          <img src="./assets/flecha-preguntas.svg" alt="" class="icons" />
         </div>
       </div>
       <div class="services-container">
         <h1>Servicio y Reparación</h1>
         <div class="service-items">
           <div class="items">
-            <img src="lupa-support.svg" alt="" />
+            <img src="./assets/seguridad.svg" alt="" />
+            <h2>Consulta Tu Cobertura</h2>
+            <h3>Inicia sesión con tu cuenta para consultar el estado de la cobertura de tus auriculares</h3>
+            <strong>Más Información</strong>
+          </div>
+          <div class="items">
+            <img src="./assets/lupa-support.svg" alt="" />
             <h2>Encuentra Tu Número De Serie</h2>
             <h3>Aprende dónde encontrar el número de serie</h3>
             <strong>Encontrar Número De Serie</strong>
           </div>
           <div class="items">
-            <img src="lupa-support.svg" alt="" />
-            <h2>Encuentra Tu Número De Serie</h2>
-            <h3>Aprende dónde encontrar el número de serie</h3>
-            <strong>Encontrar Número De Serie</strong>
-          </div>
-          <div class="items">
-            <img src="lupa-support.svg" alt="" />
-            <h2>Encuentra Tu Número De Serie</h2>
-            <h3>Aprende dónde encontrar el número de serie</h3>
-            <strong>Encontrar Número De Serie</strong>
+            <img src="./assets/reparacion.svg" alt="" />
+            <h2>Opciones De Servicio</h2>
+            <h3>Conozca sus opciones de servicio y reparación certificadas por NOS</h3>
+            <strong>Más Información</strong>
           </div>
         </div>
       </div>
+      <section id="contact"></section>
       <div class="general-container">
         <div class="container-contact">
-
           <div class="contact">
-            
             <ul class="container-nav">
-              <li>Productos</li>
-              <li>Tecnologia</li>
-              <li>asdsfe</li>
-              <li>asdsfe</li>
+              <li><a href="#products">Productos</a></li>
+              <li><a href="#tech">Tecnologia</a></li>
+              <li><a href="#support">Soporte</a></li>
+              <li><a href="#contact">Contacto</a></li>
             </ul>
-            
             <h1>¿Tienes alguna consulta? Estamos aquí para ti</h1>
             <div class="details">
               <div class="item-details">
@@ -234,46 +348,45 @@
                 <strong>support@nos.com</strong>
               </div>
               <div class="item-details">
-                <p>DIRECCIONL</p>
-                <strong>Av. Ladrón de Guevara E11-253, Quito 170143/strong>
+                <p>DIRECCION</p>
+                <strong>Av. Ladrón de Guevara E11-253, Quito 170143</strong>
               </div>
             </div>
-             <div class="details">
-
-               <h3>Contáctanos y obtén asistencia personalizado</h3>
-                <div class="item-details">
-                  <button color="black2">Enviar</button>
-                </div>
-             </div>
+            <div class="details">
+              <h3>Contáctanos y obtén asistencia personalizado</h3>
+              <div class="item-details">
+                <input
+                  type="email"
+                  class="email-component"
+                  placeholder="Email address"
+                />
+                <button color="black2">Enviar</button>
+              </div>
+            </div>
             <div class="socials">
-              <img src="facebook.svg" alt="">
-              <img src="instragram.svg" alt="">
-              <img src="instragram.svg" alt="">
-              
+              <img src="./assets/facebook.svg" alt="" />
+              <img src="./assets/instagram.svg" alt="" />
+              <img src="./assets/youtube.svg" alt="" />
+              <img src="./assets/linkedin.svg" alt="" />
             </div>
           </div>
           <div class="poster">
             <div class="details">
               <div>
-
                 <h3>CJ 7 Pro</h3>
                 <p>Headphones Premium</p>
               </div>
               <div class="see-more">
                 <small>Ver especificaciones del producto</small>
                 <div class="icon-putter">
-
-                  <img src="flecha.svg" alt="">
+                  <img src="./assets/flecha.svg" alt="" />
                 </div>
               </div>
             </div>
-            <img src="CJ-7Pro.jpg" alt="">
+            <img src="./assets/CJ-7Pro.jpg" alt="" />
           </div>
         </div>
       </div>
     </div>
-
-    <script src="load-modules.js" defer></script>
-    <script src="slider.js" defer></script>
   </body>
 </html>
