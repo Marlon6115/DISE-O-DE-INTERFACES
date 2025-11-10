@@ -1,0 +1,111 @@
+.container-text {
+  color: white;
+  margin-top: 17rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-text h6 {
+  font-size: var(--text-9xl);
+  overflow: hidden;
+ 
+  word-spacing: 0.5rem;
+  background: radial-gradient(
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.8),
+    rgb(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  white-space: nowrap;
+}
+
+.explorer-container {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 2rem;
+}
+
+.explorer-container small {
+  max-width: 18rem;
+  color: var(--color-primary);
+  font-weight: 100;
+}
+
+.content {
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 1.5rem;
+  align-items: end;
+  width: 100%;
+}
+.container-portrait {
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+.container-card {
+  position: relative;
+}
+.container-background img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.container-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.container-person img {
+  width: auto;
+  height: 60rem;
+  object-fit: cover;
+}
+.container-person {
+  position: absolute;
+  z-index: 2;
+}
+.menu{
+    height: 10rem;
+}
+@media (max-width: 600px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: var(--text-9xl);
+  }
+  .explorer-container {
+    order: 2;
+  }
+  .container-text {
+    margin-top: 2rem;
+    position: absolute;
+  }
+  .container-person {
+    bottom: 0;
+  }
+
+  .container-text h6 {
+    line-height: 1.4; 
+    margin-bottom: 3rem; 
+    letter-spacing: 0.15rem; 
+     white-space: inherit;
+  }
+  .container-person img {
+    height: 45rem;
+  }
+}
