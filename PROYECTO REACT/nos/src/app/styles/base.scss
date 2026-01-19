@@ -1,0 +1,144 @@
+/* src/styles/_base.scss */
+@import "./variables.scss";
+@import "./mixins.scss";
+
+/* --- Fonts --- */
+/* Nota: En Next.js la carpeta public se referencia con / */
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("/font/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("/font/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins-ExtraLight";
+  src: url("/font/Poppins/Poppins-ExtraLight.ttf");
+}
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("/font/Poppins/Poppins-Medium.ttf");
+}
+@font-face {
+  font-family: "Poppins-SemiBold";
+  src: url("/font/Poppins/Poppins-SemiBold.ttf");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("/font/Poppins/Poppins-Bold.ttf");
+}
+/* --- Resets --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-secondary-orange);
+  border-radius: 70rem;
+  &:hover {
+    background-color: #666;
+  }
+}
+
+/* --- Native Tags --- */
+html,
+body {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  font-family: var(--font-family);
+  color: var(--color-secondary);
+  background-color: var(--background);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+h1 {
+  font-size: var(--text-5xl);
+  font-family: "Poppins-SemiBold";
+}
+h2 {
+  font-size: var(--text-xl);
+  font-family: "Poppins-Medium";
+}
+h3 {
+  font-size: var(--text-lg);
+  font-family: "Poppins-Medium";
+}
+h4 {
+  font-size: var(--text-2xl);
+  font-family: "Poppins-SemiBold";
+}
+p {
+  font-size: var(--text-base);
+  color: var(--color-gray);
+}
+small {
+  font-size: var(--text-sm);
+  line-height: var(--text-sm);
+}
+strong {
+  font-size: var(--text-md);
+  line-height: var(--text-md);
+}
+
+/* --- Global Responsive Logic for Tags --- */
+/* Aquí usamos los mixins que creamos arriba */
+
+@include desktop-sm {
+  // < 1400px
+  h1 {
+    font-size: var(--text-2xl);
+  }
+  h2 {
+    font-size: var(--text-xl);
+  }
+  h3 {
+    font-size: var(--text-lg);
+  }
+  h4 {
+    font-size: var(--text-2xl);
+  }
+}
+
+@include tablet {
+  // < 1150px
+  h1 {
+    font-size: var(--text-2xl);
+  }
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@include mobile {
+  // < 600px
+  h1 {
+    font-size: var(--text-xl);
+  }
+  p {
+    font-size: 0.875rem;
+  }
+}

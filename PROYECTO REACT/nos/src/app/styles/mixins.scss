@@ -1,0 +1,20 @@
+/* src/styles/_mixins.scss */
+@import "./variables.scss"; // Importamos variables para acceder a $bp-sm, etc.
+
+@mixin mobile {
+  @media (max-width: $bp-sm) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: $bp-lg) {
+    @content;
+  }
+}
+
+@mixin desktop-sm {
+  @media (max-width: $bp-xl) {
+    @content;
+  }
+}
