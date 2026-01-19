@@ -1,6 +1,7 @@
-/* src/styles/_mixins.scss */
-@import "./variables.scss"; // Importamos variables para acceder a $bp-sm, etc.
-
+$bp-sm: 600px;
+$bp-md: 700px;
+$bp-lg: 1150px;
+$bp-xl: 1400px;
 @mixin mobile {
   @media (max-width: $bp-sm) {
     @content;

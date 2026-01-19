@@ -8,6 +8,7 @@ export const Btn = ({
   onClick,
   type,
   id,
+  children,
   btnColor = "white" | "black" | "linkWhite" | "linkBlack" | "transparent",
 }) => {
   return href ? (
@@ -16,7 +17,8 @@ export const Btn = ({
       href={href || "/"}
       key={id}
     >
-      <div className={styles.link}>{text}</div>
+      {children}
+      {text}
     </Link>
   ) : (
     <button
@@ -25,7 +27,7 @@ export const Btn = ({
       onClick={onClick}
       type={type || "button"}
     >
-      <div className={`${styles.link} `}>{text}</div>
+      {text}
     </button>
   );
 };

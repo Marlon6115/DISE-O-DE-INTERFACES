@@ -1,12 +1,6 @@
-/* src/styles/globals.scss */
 
-/* 1. Variables primero */
 @import "./variables.scss";
-
-/* 2. Mixins (Herramientas) */
 @import "./mixins.scss";
 
-/* 3. Base (Estilos globales reales) */
 @import "./base.scss";
 
-/* El archivo queda así de limpio */

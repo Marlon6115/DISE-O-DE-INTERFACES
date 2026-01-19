@@ -1,16 +1,17 @@
 @import "@/styles/variables.scss";
+@import "@/styles/mixins.scss";
 
 .itembtn {
-  background-color: $color-black;
   color: $color-primary;
   border: none;
-
+  background-color: transparent;
   cursor: pointer;
   transition: $transition;
   white-space: nowrap;
-  font-size: $text-md;
+  font-size: $text-base;
   font-family: "Poppins-Regular";
   transition: 400ms;
+  width: min-content;
   &:hover {
     opacity: 0.9;
   }
@@ -19,9 +20,12 @@
   background-color: $color-white;
   color: $color-black;
   &:hover {
-    background-color: $color-secondary-gray4;
+    background-color: $color-secondary-gray3;
     transition: 400ms;
   }
+}
+.black {
+  background-color: $color-black;
 }
 .transparent {
   background-color: transparent;
@@ -30,13 +34,16 @@
 .black,
 .white,
 .transparent {
-  padding: 0.75rem 2rem;
+  padding: 0.5rem 1rem;
   border-radius: $border-radius;
 }
-.link {
+.linkBlack,
+.linkWhite {
   list-style: none;
   position: relative;
   padding-bottom: 0.25rem;
+  width: min-content;
+  text-decoration: none;
   cursor: pointer;
 
   &::before {
@@ -58,11 +65,24 @@
     background: $color-secondary-orange;
   }
 }
-.linkBlack .link{
-  color: $color-black;
+.linkWhite,
+.linkBlack {
+  &::before,
+  &:focus-within::before {
+    background: $color-secondary-orange;
+  }
 }
-.linkWhite:hover {
-  color: $color-secondary-orange;
+.linkBlack {
+  color: $color-black;
+  &:hover {
+    color: $color-secondary-orange !important;
+  }
+}
+@include mobile {
+  .itembtn {
+    padding: 0.5rem;
+    font-size: 0.75rem !important;
+  }
 }
 // @import url("style.css");
 

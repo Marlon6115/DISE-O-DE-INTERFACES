@@ -1,9 +1,15 @@
+import { Products } from "@/containers/containerProducts/products";
 import NavContainer from "@/containers/navContainer/navContainer";
-import Image from "next/image";
+import { NavMobileContainer } from "@/containers/navContainer/navMobileContainer";
+import { Portrait } from "@/containers/portrait/portrait";
+import styles from "./page.module.scss";
 export default function Home() {
   return (
-    <h1>
+    <div className={styles.containerColumn}>
       <NavContainer />
-    </h1>
+      <NavMobileContainer />
+      <Portrait />
+      <Products />
+    </div>
   );
 }
